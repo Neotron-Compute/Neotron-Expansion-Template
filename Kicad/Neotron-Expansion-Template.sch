@@ -1,0 +1,938 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Neotron Expansion Template"
+Date "2021-08-18"
+Rev "[Uncontrolled]"
+Comp "https://neotron-compute.github.io/"
+Comment1 "Licensed as CC BY 4.0"
+Comment2 "Copyright (c) 2021, The Neotron Developers, et al."
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Neotron-Common-Hardware:Neotron-Expansion-Edge J1
+U 1 1 611C00D9
+P 6575 5100
+F 0 "J1" H 6550 5815 50  0000 C CNN
+F 1 "Neotron-Expansion-Edge" H 6550 5724 50  0000 C CNN
+F 2 "Neotron-Common-Hardware:Neotron-Expansion-Edge" H 6575 5800 50  0001 C CNN
+F 3 "" H 7025 5500 50  0001 C CNN
+	1    6575 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_EEPROM:24LC02 U2
+U 1 1 611C1B13
+P 8200 5550
+F 0 "U2" H 7950 5800 50  0000 C CNN
+F 1 "34LC02" H 8250 5825 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 8200 5550 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/22029F.pdf" H 8200 5550 50  0001 C CNN
+F 4 "34LC02-I/P" H 8200 5550 50  0001 C CNN "MPN"
+F 5 "Microchip" H 8200 5550 50  0001 C CNN "Manufacturer"
+F 6 "34LC02-I/P-ND" H 8200 5550 50  0001 C CNN "Digikey"
+	1    8200 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 5450 7800 5450
+Wire Wire Line
+	7125 5550 7800 5550
+Wire Wire Line
+	7125 5650 7800 5650
+$Comp
+L power:GND #PWR08
+U 1 1 611C3F48
+P 8200 6100
+F 0 "#PWR08" H 8200 5850 50  0001 C CNN
+F 1 "GND" H 8205 5927 50  0000 C CNN
+F 2 "" H 8200 6100 50  0001 C CNN
+F 3 "" H 8200 6100 50  0001 C CNN
+	1    8200 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5850 8200 6100
+Wire Wire Line
+	7125 4650 7525 4650
+Text Label 7175 4650 0    50   ~ 0
+I2C_SCL
+Text Label 7175 4750 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	7125 4750 7525 4750
+$Comp
+L power:+5V #PWR05
+U 1 1 611C4AED
+P 7675 4800
+F 0 "#PWR05" H 7675 4650 50  0001 C CNN
+F 1 "+5V" H 7690 4973 50  0000 C CNN
+F 2 "" H 7675 4800 50  0001 C CNN
+F 3 "" H 7675 4800 50  0001 C CNN
+	1    7675 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR06
+U 1 1 611C57AF
+P 7875 4800
+F 0 "#PWR06" H 7875 4650 50  0001 C CNN
+F 1 "+3V3" H 7890 4973 50  0000 C CNN
+F 2 "" H 7875 4800 50  0001 C CNN
+F 3 "" H 7875 4800 50  0001 C CNN
+	1    7875 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 5050 7675 5050
+Wire Wire Line
+	7675 4800 7675 4950
+Connection ~ 7675 4950
+Wire Wire Line
+	7675 4950 7675 5050
+Wire Wire Line
+	7125 5150 7875 5150
+Wire Wire Line
+	7875 4800 7875 5150
+Connection ~ 7875 5150
+Wire Wire Line
+	7875 5150 7875 5250
+$Comp
+L power:+3V3 #PWR07
+U 1 1 611C663E
+P 8200 5150
+F 0 "#PWR07" H 8200 5000 50  0001 C CNN
+F 1 "+3V3" H 8215 5323 50  0000 C CNN
+F 2 "" H 8200 5150 50  0001 C CNN
+F 3 "" H 8200 5150 50  0001 C CNN
+	1    8200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5150 8200 5250
+Text Label 8650 5550 0    50   ~ 0
+I2C_SCL
+Text Label 8650 5450 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	8600 5450 8975 5450
+Wire Wire Line
+	8600 5550 8975 5550
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 611C8421
+P 9250 5875
+F 0 "JP1" V 9204 5941 50  0000 L CNN
+F 1 "Two-way Jumper" V 9295 5941 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9250 5875 50  0001 C CNN
+F 3 "~" H 9250 5875 50  0001 C CNN
+	1    9250 5875
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 611C9BA2
+P 9250 6100
+F 0 "#PWR010" H 9250 5850 50  0001 C CNN
+F 1 "GND" H 9255 5927 50  0000 C CNN
+F 2 "" H 9250 6100 50  0001 C CNN
+F 3 "" H 9250 6100 50  0001 C CNN
+	1    9250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 611CA3DB
+P 6000 6975
+F 0 "C1" H 6115 7021 50  0000 L CNN
+F 1 "100n" H 6115 6930 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6038 6825 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C315C104M5U5TA.pdf" H 6000 6975 50  0001 C CNN
+F 4 "10V" H 6000 6975 50  0001 C CNN "Voltage"
+F 5 "399-4151-ND" H 6000 6975 50  0001 C CNN "Digikey"
+F 6 "C315C104M5U5TA" H 6000 6975 50  0001 C CNN "MPN"
+F 7 "KEMET" H 6000 6975 50  0001 C CNN "Manufacturer"
+	1    6000 6975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR011
+U 1 1 611CAD1F
+P 6000 6750
+F 0 "#PWR011" H 6000 6600 50  0001 C CNN
+F 1 "+3V3" H 6015 6923 50  0000 C CNN
+F 2 "" H 6000 6750 50  0001 C CNN
+F 3 "" H 6000 6750 50  0001 C CNN
+	1    6000 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 611CB1C2
+P 6000 7200
+F 0 "#PWR012" H 6000 6950 50  0001 C CNN
+F 1 "GND" H 6005 7027 50  0000 C CNN
+F 2 "" H 6000 7200 50  0001 C CNN
+F 3 "" H 6000 7200 50  0001 C CNN
+	1    6000 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 6750 6000 6825
+Wire Wire Line
+	6000 7125 6000 7200
+$Comp
+L power:GND #PWR04
+U 1 1 611CB8D8
+P 5875 5850
+F 0 "#PWR04" H 5875 5600 50  0001 C CNN
+F 1 "GND" H 5880 5677 50  0000 C CNN
+F 2 "" H 5875 5850 50  0001 C CNN
+F 3 "" H 5875 5850 50  0001 C CNN
+	1    5875 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 5750 5875 5750
+Wire Wire Line
+	5875 5650 5975 5650
+Wire Wire Line
+	5875 5650 5875 5750
+Wire Wire Line
+	5875 5650 5875 5550
+Wire Wire Line
+	5875 5550 5975 5550
+Connection ~ 5875 5650
+Wire Wire Line
+	5875 5550 5875 5450
+Wire Wire Line
+	5875 5450 5975 5450
+Connection ~ 5875 5550
+Wire Wire Line
+	5875 5450 5875 5350
+Wire Wire Line
+	5875 5350 5975 5350
+Connection ~ 5875 5450
+Wire Wire Line
+	5875 5750 5875 5850
+Connection ~ 5875 5750
+Text Notes 9400 6175 0    50   ~ 0
+Fit jumper to factory program EEPROM.
+$Comp
+L Interface_Expansion:MCP23S17_SP U1
+U 1 1 611CEA09
+P 4525 4150
+F 0 "U1" H 4975 3200 50  0000 C CNN
+F 1 "MCP23S17" H 4175 3200 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 4725 3150 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 4725 3050 50  0001 L CNN
+F 4 "MCP23S17-E/SP" H 4525 4150 50  0001 C CNN "MPN"
+F 5 "Microchip" H 4525 4150 50  0001 C CNN "Manufacturer"
+F 6 "MCP23S17-E/SP-ND" H 4525 4150 50  0001 C CNN "Digikey"
+	1    4525 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5225 4950 5975 4950
+Wire Wire Line
+	5975 4850 5225 4850
+Wire Wire Line
+	5975 5050 5375 5050
+Wire Wire Line
+	5375 5050 5375 4250
+Wire Wire Line
+	5375 4250 5225 4250
+Wire Wire Line
+	5225 4050 5500 4050
+Wire Wire Line
+	5500 4050 5500 5150
+Wire Wire Line
+	5500 5150 5975 5150
+Wire Wire Line
+	5650 4750 5825 4650
+Wire Wire Line
+	5650 4650 5825 4750
+NoConn ~ 5225 4350
+$Comp
+L power:GND #PWR03
+U 1 1 611EB047
+P 4525 5300
+F 0 "#PWR03" H 4525 5050 50  0001 C CNN
+F 1 "GND" H 4530 5127 50  0000 C CNN
+F 2 "" H 4525 5300 50  0001 C CNN
+F 3 "" H 4525 5300 50  0001 C CNN
+	1    4525 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 5250 4525 5300
+$Comp
+L power:+3V3 #PWR02
+U 1 1 611EC394
+P 4525 2975
+F 0 "#PWR02" H 4525 2825 50  0001 C CNN
+F 1 "+3V3" H 4540 3148 50  0000 C CNN
+F 2 "" H 4525 2975 50  0001 C CNN
+F 3 "" H 4525 2975 50  0001 C CNN
+	1    4525 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 2975 4525 3050
+$Comp
+L Device:LED D1
+U 1 1 611F618F
+P 2375 1300
+F 0 "D1" H 2375 1475 50  0000 C CNN
+F 1 "LED" H 2375 1400 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2375 1300 50  0001 C CNN
+F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 1300 50  0001 C CNN
+F 4 "2460-L314ED-ND" H 2375 1300 50  0001 C CNN "Digikey"
+F 5 "L314ED" H 2375 1300 50  0001 C CNN "MPN"
+F 6 "American Opto Plus LED" H 2375 1300 50  0001 C CNN "Manufacturer"
+	1    2375 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 1300 2075 1300
+Wire Wire Line
+	2225 3400 2075 3400
+Wire Wire Line
+	2225 3100 2075 3100
+Connection ~ 2075 3100
+Wire Wire Line
+	2075 3100 2075 3400
+Wire Wire Line
+	2225 2800 2075 2800
+Connection ~ 2075 2800
+Wire Wire Line
+	2075 2800 2075 3100
+Wire Wire Line
+	2225 2500 2075 2500
+Connection ~ 2075 2500
+Wire Wire Line
+	2075 2500 2075 2800
+Wire Wire Line
+	2225 2200 2075 2200
+Wire Wire Line
+	2075 1300 2075 1600
+Connection ~ 2075 2200
+Wire Wire Line
+	2075 2200 2075 2500
+Wire Wire Line
+	2225 1900 2075 1900
+Connection ~ 2075 1900
+Wire Wire Line
+	2075 1900 2075 2200
+Wire Wire Line
+	2225 1600 2075 1600
+Connection ~ 2075 1600
+Wire Wire Line
+	2075 1600 2075 1900
+$Comp
+L Device:R R1
+U 1 1 61213FBD
+P 2750 1300
+F 0 "R1" V 2575 1300 50  0000 C CNN
+F 1 "330" V 2650 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 1300 50  0001 C CNN
+F 3 "~" H 2750 1300 50  0001 C CNN
+F 4 "CF14JT330RTR-ND" H 2750 1300 50  0001 C CNN "Digikey"
+F 5 "CF14JT330R" H 2750 1300 50  0001 C CNN "MPN"
+F 6 "Stackpole Electronics Inc" H 2750 1300 50  0001 C CNN "Manufacturer"
+	1    2750 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 1300 2525 1300
+Wire Wire Line
+	2600 1600 2525 1600
+Wire Wire Line
+	2600 1900 2525 1900
+Wire Wire Line
+	2525 2200 2600 2200
+Wire Wire Line
+	2600 2500 2525 2500
+Wire Wire Line
+	2525 2800 2600 2800
+Wire Wire Line
+	2600 3100 2525 3100
+Wire Wire Line
+	2525 3400 2600 3400
+Wire Wire Line
+	2075 1175 2075 1300
+Connection ~ 2075 1300
+$Comp
+L power:+5V #PWR01
+U 1 1 61224CA4
+P 2075 1175
+F 0 "#PWR01" H 2075 1025 50  0001 C CNN
+F 1 "+5V" H 2090 1348 50  0000 C CNN
+F 2 "" H 2075 1175 50  0001 C CNN
+F 3 "" H 2075 1175 50  0001 C CNN
+	1    2075 1175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4050 2950 3400
+Wire Wire Line
+	2950 3400 2900 3400
+Wire Wire Line
+	2900 3100 3050 3100
+$Comp
+L Device:R R2
+U 1 1 612902EB
+P 2750 1600
+F 0 "R2" V 2575 1600 50  0000 C CNN
+F 1 "330" V 2650 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 1600 50  0001 C CNN
+F 3 "~" H 2750 1600 50  0001 C CNN
+F 4 "CF14JT330RTR-ND" H 2750 1600 50  0001 C CNN "Digikey"
+F 5 "CF14JT330R" H 2750 1600 50  0001 C CNN "MPN"
+F 6 "Stackpole Electronics Inc" H 2750 1600 50  0001 C CNN "Manufacturer"
+	1    2750 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6129061F
+P 2750 1900
+F 0 "R3" V 2575 1900 50  0000 C CNN
+F 1 "330" V 2650 1900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 1900 50  0001 C CNN
+F 3 "~" H 2750 1900 50  0001 C CNN
+F 4 "CF14JT330RTR-ND" H 2750 1900 50  0001 C CNN "Digikey"
+F 5 "CF14JT330R" H 2750 1900 50  0001 C CNN "MPN"
+F 6 "Stackpole Electronics Inc" H 2750 1900 50  0001 C CNN "Manufacturer"
+	1    2750 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61290A5E
+P 2750 2200
+F 0 "R4" V 2575 2200 50  0000 C CNN
+F 1 "330" V 2650 2200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 2200 50  0001 C CNN
+F 3 "~" H 2750 2200 50  0001 C CNN
+F 4 "CF14JT330RTR-ND" H 2750 2200 50  0001 C CNN "Digikey"
+F 5 "CF14JT330R" H 2750 2200 50  0001 C CNN "MPN"
+F 6 "Stackpole Electronics Inc" H 2750 2200 50  0001 C CNN "Manufacturer"
+	1    2750 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61290D67
+P 2750 2500
+F 0 "R5" V 2575 2500 50  0000 C CNN
+F 1 "330" V 2650 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 2500 50  0001 C CNN
+F 3 "~" H 2750 2500 50  0001 C CNN
+F 4 "CF14JT330RTR-ND" H 2750 2500 50  0001 C CNN "Digikey"
+F 5 "CF14JT330R" H 2750 2500 50  0001 C CNN "MPN"
+F 6 "Stackpole Electronics Inc" H 2750 2500 50  0001 C CNN "Manufacturer"
+	1    2750 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 612911BE
+P 2750 2800
+F 0 "R6" V 2575 2800 50  0000 C CNN
+F 1 "330" V 2650 2800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 2800 50  0001 C CNN
+F 3 "~" H 2750 2800 50  0001 C CNN
+F 4 "CF14JT330RTR-ND" H 2750 2800 50  0001 C CNN "Digikey"
+F 5 "CF14JT330R" H 2750 2800 50  0001 C CNN "MPN"
+F 6 "Stackpole Electronics Inc" H 2750 2800 50  0001 C CNN "Manufacturer"
+	1    2750 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 61291473
+P 2750 3100
+F 0 "R7" V 2575 3100 50  0000 C CNN
+F 1 "330" V 2650 3100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 3100 50  0001 C CNN
+F 3 "~" H 2750 3100 50  0001 C CNN
+F 4 "CF14JT330RTR-ND" H 2750 3100 50  0001 C CNN "Digikey"
+F 5 "CF14JT330R" H 2750 3100 50  0001 C CNN "MPN"
+F 6 "Stackpole Electronics Inc" H 2750 3100 50  0001 C CNN "Manufacturer"
+	1    2750 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 612917C9
+P 2750 3400
+F 0 "R8" V 2575 3400 50  0000 C CNN
+F 1 "330" V 2650 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 3400 50  0001 C CNN
+F 3 "~" H 2750 3400 50  0001 C CNN
+F 4 "CF14JT330RTR-ND" H 2750 3400 50  0001 C CNN "Digikey"
+F 5 "CF14JT330R" H 2750 3400 50  0001 C CNN "MPN"
+F 6 "Stackpole Electronics Inc" H 2750 3400 50  0001 C CNN "Manufacturer"
+	1    2750 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 61291D57
+P 2375 1600
+F 0 "D2" H 2375 1775 50  0000 C CNN
+F 1 "LED" H 2375 1700 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2375 1600 50  0001 C CNN
+F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 1600 50  0001 C CNN
+F 4 "2460-L314ED-ND" H 2375 1600 50  0001 C CNN "Digikey"
+F 5 "L314ED" H 2375 1600 50  0001 C CNN "MPN"
+F 6 "American Opto Plus LED" H 2375 1600 50  0001 C CNN "Manufacturer"
+	1    2375 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 61292318
+P 2375 1900
+F 0 "D3" H 2375 2075 50  0000 C CNN
+F 1 "LED" H 2375 2000 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2375 1900 50  0001 C CNN
+F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 1900 50  0001 C CNN
+F 4 "2460-L314ED-ND" H 2375 1900 50  0001 C CNN "Digikey"
+F 5 "L314ED" H 2375 1900 50  0001 C CNN "MPN"
+F 6 "American Opto Plus LED" H 2375 1900 50  0001 C CNN "Manufacturer"
+	1    2375 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 61292935
+P 2375 2200
+F 0 "D4" H 2375 2375 50  0000 C CNN
+F 1 "LED" H 2375 2300 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2375 2200 50  0001 C CNN
+F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 2200 50  0001 C CNN
+F 4 "2460-L314ED-ND" H 2375 2200 50  0001 C CNN "Digikey"
+F 5 "L314ED" H 2375 2200 50  0001 C CNN "MPN"
+F 6 "American Opto Plus LED" H 2375 2200 50  0001 C CNN "Manufacturer"
+	1    2375 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 61292B77
+P 2375 2500
+F 0 "D5" H 2375 2675 50  0000 C CNN
+F 1 "LED" H 2375 2600 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2375 2500 50  0001 C CNN
+F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 2500 50  0001 C CNN
+F 4 "2460-L314ED-ND" H 2375 2500 50  0001 C CNN "Digikey"
+F 5 "L314ED" H 2375 2500 50  0001 C CNN "MPN"
+F 6 "American Opto Plus LED" H 2375 2500 50  0001 C CNN "Manufacturer"
+	1    2375 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 61292E10
+P 2375 2800
+F 0 "D6" H 2375 2975 50  0000 C CNN
+F 1 "LED" H 2375 2900 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2375 2800 50  0001 C CNN
+F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 2800 50  0001 C CNN
+F 4 "2460-L314ED-ND" H 2375 2800 50  0001 C CNN "Digikey"
+F 5 "L314ED" H 2375 2800 50  0001 C CNN "MPN"
+F 6 "American Opto Plus LED" H 2375 2800 50  0001 C CNN "Manufacturer"
+	1    2375 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 61292F34
+P 2375 3100
+F 0 "D7" H 2375 3275 50  0000 C CNN
+F 1 "LED" H 2375 3200 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2375 3100 50  0001 C CNN
+F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 3100 50  0001 C CNN
+F 4 "2460-L314ED-ND" H 2375 3100 50  0001 C CNN "Digikey"
+F 5 "L314ED" H 2375 3100 50  0001 C CNN "MPN"
+F 6 "American Opto Plus LED" H 2375 3100 50  0001 C CNN "Manufacturer"
+	1    2375 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 61293280
+P 2375 3400
+F 0 "D8" H 2375 3575 50  0000 C CNN
+F 1 "LED" H 2375 3500 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2375 3400 50  0001 C CNN
+F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 3400 50  0001 C CNN
+F 4 "2460-L314ED-ND" H 2375 3400 50  0001 C CNN "Digikey"
+F 5 "L314ED" H 2375 3400 50  0001 C CNN "MPN"
+F 6 "American Opto Plus LED" H 2375 3400 50  0001 C CNN "Manufacturer"
+	1    2375 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4050 3825 4050
+Wire Wire Line
+	3825 3950 3050 3950
+Wire Wire Line
+	3050 3950 3050 3100
+Wire Wire Line
+	3825 3850 3150 3850
+Wire Wire Line
+	3150 3850 3150 2800
+Wire Wire Line
+	3825 3750 3250 3750
+Wire Wire Line
+	3250 3750 3250 2500
+Wire Wire Line
+	3825 3650 3350 3650
+Wire Wire Line
+	3350 3650 3350 2200
+Wire Wire Line
+	3450 1900 3450 3550
+Wire Wire Line
+	3450 3550 3825 3550
+Wire Wire Line
+	3825 3450 3550 3450
+Wire Wire Line
+	3550 3450 3550 1600
+Wire Wire Line
+	3650 1300 3650 3350
+Wire Wire Line
+	3650 3350 3825 3350
+Wire Wire Line
+	2900 1300 3650 1300
+Wire Wire Line
+	2900 1600 3550 1600
+Wire Wire Line
+	2900 1900 3450 1900
+Wire Wire Line
+	2900 2200 3350 2200
+Wire Wire Line
+	2900 2500 3250 2500
+Wire Wire Line
+	2900 2800 3150 2800
+$Comp
+L Device:C C3
+U 1 1 612D5BDF
+P 6500 6975
+F 0 "C3" H 6615 7021 50  0000 L CNN
+F 1 "100n" H 6615 6930 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6538 6825 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C315C104M5U5TA.pdf" H 6500 6975 50  0001 C CNN
+F 4 "10V" H 6500 6975 50  0001 C CNN "Voltage"
+F 5 "399-4151-ND" H 6500 6975 50  0001 C CNN "Digikey"
+F 6 "C315C104M5U5TA" H 6500 6975 50  0001 C CNN "MPN"
+F 7 "KEMET" H 6500 6975 50  0001 C CNN "Manufacturer"
+	1    6500 6975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 612D5EC9
+P 6500 6750
+F 0 "#PWR0101" H 6500 6600 50  0001 C CNN
+F 1 "+3V3" H 6515 6923 50  0000 C CNN
+F 2 "" H 6500 6750 50  0001 C CNN
+F 3 "" H 6500 6750 50  0001 C CNN
+	1    6500 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 612D5ED3
+P 6500 7200
+F 0 "#PWR0102" H 6500 6950 50  0001 C CNN
+F 1 "GND" H 6505 7027 50  0000 C CNN
+F 2 "" H 6500 7200 50  0001 C CNN
+F 3 "" H 6500 7200 50  0001 C CNN
+	1    6500 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 6750 6500 6825
+Wire Wire Line
+	6500 7125 6500 7200
+$Comp
+L Device:C C2
+U 1 1 612EDEC8
+P 5500 6975
+F 0 "C2" H 5615 7021 50  0000 L CNN
+F 1 "100n" H 5615 6930 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 5538 6825 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C315C104M5U5TA.pdf" H 5500 6975 50  0001 C CNN
+F 4 "16V" H 5500 6975 50  0001 C CNN "Voltage"
+F 5 "399-4151-ND" H 5500 6975 50  0001 C CNN "Digikey"
+F 6 "C315C104M5U5TA" H 5500 6975 50  0001 C CNN "MPN"
+F 7 "KEMET" H 5500 6975 50  0001 C CNN "Manufacturer"
+	1    5500 6975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 612EE1EC
+P 5500 7200
+F 0 "#PWR0103" H 5500 6950 50  0001 C CNN
+F 1 "GND" H 5505 7027 50  0000 C CNN
+F 2 "" H 5500 7200 50  0001 C CNN
+F 3 "" H 5500 7200 50  0001 C CNN
+	1    5500 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6750 5500 6825
+Wire Wire Line
+	5500 7125 5500 7200
+$Comp
+L power:+5V #PWR0104
+U 1 1 612F1BDB
+P 5500 6750
+F 0 "#PWR0104" H 5500 6600 50  0001 C CNN
+F 1 "+5V" H 5515 6923 50  0000 C CNN
+F 2 "" H 5500 6750 50  0001 C CNN
+F 3 "" H 5500 6750 50  0001 C CNN
+	1    5500 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x08 SW1
+U 1 1 612F907C
+P 2500 4650
+F 0 "SW1" H 2500 5317 50  0000 C CNN
+F 1 "SW_DIP_x08" H 2500 5226 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 2500 4650 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/resource/digikeypdf/ds01-254.pdf" H 2500 4650 50  0001 C CNN
+F 4 "2223-DS01C-254-L-08BE-ND" H 2500 4650 50  0001 C CNN "Digikey"
+F 5 "DS01C-254-L-08BE" H 2500 4650 50  0001 C CNN "MPN"
+F 6 "CUI Devices" H 2500 4650 50  0001 C CNN "Manufacturer"
+	1    2500 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4250 2100 4250
+Wire Wire Line
+	2100 4250 2100 4350
+Wire Wire Line
+	2200 4950 2100 4950
+Wire Wire Line
+	2200 4850 2100 4850
+Connection ~ 2100 4850
+Wire Wire Line
+	2100 4850 2100 4950
+Wire Wire Line
+	2200 4750 2100 4750
+Connection ~ 2100 4750
+Wire Wire Line
+	2100 4750 2100 4850
+Wire Wire Line
+	2200 4650 2100 4650
+Connection ~ 2100 4650
+Wire Wire Line
+	2100 4650 2100 4750
+Wire Wire Line
+	2200 4550 2100 4550
+Connection ~ 2100 4550
+Wire Wire Line
+	2100 4550 2100 4650
+Wire Wire Line
+	2200 4450 2100 4450
+Connection ~ 2100 4450
+Wire Wire Line
+	2100 4450 2100 4550
+Wire Wire Line
+	2200 4350 2100 4350
+Connection ~ 2100 4350
+Wire Wire Line
+	2100 4350 2100 4450
+$Comp
+L power:GND #PWR0106
+U 1 1 61374497
+P 5325 3650
+F 0 "#PWR0106" H 5325 3400 50  0001 C CNN
+F 1 "GND" H 5330 3477 50  0000 C CNN
+F 2 "" H 5325 3650 50  0001 C CNN
+F 3 "" H 5325 3650 50  0001 C CNN
+	1    5325 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 3550 5325 3550
+Wire Wire Line
+	5325 3550 5325 3650
+Wire Wire Line
+	5225 3450 5325 3450
+Wire Wire Line
+	5325 3450 5325 3550
+Connection ~ 5325 3550
+Wire Wire Line
+	5225 3350 5325 3350
+Wire Wire Line
+	5325 3350 5325 3450
+Connection ~ 5325 3450
+Wire Wire Line
+	5975 4750 5825 4750
+Wire Wire Line
+	5825 4650 5975 4650
+Wire Wire Line
+	5650 4650 5225 4650
+Wire Wire Line
+	5225 4750 5650 4750
+Text Notes 5050 3025 0    100  ~ 0
+SPI I/O Expansion Device
+Text Notes 6675 4275 0    100  ~ 0
+Edge Connector
+Text Notes 8200 4875 0    100  ~ 0
+Descriptor EEPROM
+Wire Wire Line
+	7125 4950 7675 4950
+Wire Wire Line
+	7125 5250 7875 5250
+$Comp
+L Device:R R9
+U 1 1 611F37BA
+P 9250 5400
+F 0 "R9" H 9100 5375 50  0000 L CNN
+F 1 "10k" H 9050 5450 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9180 5400 50  0001 C CNN
+F 3 "~" H 9250 5400 50  0001 C CNN
+F 4 "CF14JT10K0TR-ND" H 9250 5400 50  0001 C CNN "Digikey"
+F 5 "CF14JT10K0" H 9250 5400 50  0001 C CNN "MPN"
+F 6 "Stackpole Electronics Inc" H 9250 5400 50  0001 C CNN "Manufacturer"
+	1    9250 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 5175 9250 5250
+$Comp
+L power:+3V3 #PWR09
+U 1 1 611C9540
+P 9250 5175
+F 0 "#PWR09" H 9250 5025 50  0001 C CNN
+F 1 "+3V3" H 9265 5348 50  0000 C CNN
+F 2 "" H 9250 5175 50  0001 C CNN
+F 3 "" H 9250 5175 50  0001 C CNN
+	1    9250 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 6075 9250 6100
+Wire Wire Line
+	9250 5550 9250 5600
+Wire Wire Line
+	8600 5650 9100 5650
+Wire Wire Line
+	9250 5600 9100 5600
+Wire Wire Line
+	9100 5600 9100 5650
+Connection ~ 9250 5600
+Wire Wire Line
+	9250 5600 9250 5675
+Text Notes 8350 6225 0    50   ~ 0
+34AA02-I/P is also\nfine.\n\nNOTE: 24xx02 chips\nignore A0/A1/A2.
+$Comp
+L Device:R_Network08 RN1
+U 1 1 61246621
+P 3225 5325
+F 0 "RN1" H 3050 5600 50  0000 L CNN
+F 1 "10k x 8" H 3050 5525 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 3700 5325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 3225 5325 50  0001 C CNN
+F 4 "Bourns Inc." H 3225 5325 50  0001 C CNN "Manufacturer"
+F 5 "4609X-101-103LF" H 3225 5325 50  0001 C CNN "MPN"
+F 6 "4609X-101-103LF-ND" H 3225 5325 50  0001 C CNN "Digikey"
+	1    3225 5325
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR013
+U 1 1 6124CB80
+P 2100 4125
+F 0 "#PWR013" H 2100 3975 50  0001 C CNN
+F 1 "+3V3" H 2100 4275 50  0000 C CNN
+F 2 "" H 2100 4125 50  0001 C CNN
+F 3 "" H 2100 4125 50  0001 C CNN
+	1    2100 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4250 2925 4250
+Wire Wire Line
+	2800 4350 3025 4350
+Wire Wire Line
+	2800 4450 3125 4450
+Wire Wire Line
+	2800 4550 3225 4550
+Wire Wire Line
+	2800 4650 3325 4650
+Wire Wire Line
+	2800 4750 3425 4750
+Wire Wire Line
+	2800 4850 3525 4850
+Wire Wire Line
+	2800 4950 3625 4950
+Wire Wire Line
+	2925 5125 2925 4250
+Connection ~ 2925 4250
+Wire Wire Line
+	2925 4250 3825 4250
+Wire Wire Line
+	3025 5125 3025 4350
+Connection ~ 3025 4350
+Wire Wire Line
+	3025 4350 3825 4350
+Wire Wire Line
+	3125 5125 3125 4450
+Connection ~ 3125 4450
+Wire Wire Line
+	3125 4450 3825 4450
+Wire Wire Line
+	3225 5125 3225 4550
+Connection ~ 3225 4550
+Wire Wire Line
+	3225 4550 3825 4550
+Wire Wire Line
+	3325 5125 3325 4650
+Connection ~ 3325 4650
+Wire Wire Line
+	3325 4650 3825 4650
+Wire Wire Line
+	3425 5125 3425 4750
+Connection ~ 3425 4750
+Wire Wire Line
+	3425 4750 3825 4750
+Wire Wire Line
+	3525 5125 3525 4850
+Connection ~ 3525 4850
+Wire Wire Line
+	3525 4850 3825 4850
+Wire Wire Line
+	3625 5125 3625 4950
+Connection ~ 3625 4950
+Wire Wire Line
+	3625 4950 3825 4950
+$Comp
+L power:GND #PWR0105
+U 1 1 61309C7F
+P 3625 5575
+F 0 "#PWR0105" H 3625 5325 50  0001 C CNN
+F 1 "GND" H 3630 5402 50  0000 C CNN
+F 2 "" H 3625 5575 50  0001 C CNN
+F 3 "" H 3625 5575 50  0001 C CNN
+	1    3625 5575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 5525 3625 5575
+Wire Wire Line
+	2100 4125 2100 4250
+Connection ~ 2100 4250
+$EndSCHEMATC
