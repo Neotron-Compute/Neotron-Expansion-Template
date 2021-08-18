@@ -21,6 +21,7 @@ F 0 "J1" H 6550 5815 50  0000 C CNN
 F 1 "Neotron-Expansion-Edge" H 6550 5724 50  0000 C CNN
 F 2 "Neotron-Common-Hardware:Neotron-Expansion-Edge" H 6575 5800 50  0001 C CNN
 F 3 "" H 7025 5500 50  0001 C CNN
+F 4 "1" H 6575 5100 50  0001 C CNN "DNP"
 	1    6575 5100
 	1    0    0    -1  
 $EndComp
@@ -35,6 +36,7 @@ F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/22029F.pdf" H 8200 5550 50
 F 4 "34LC02-I/P" H 8200 5550 50  0001 C CNN "MPN"
 F 5 "Microchip" H 8200 5550 50  0001 C CNN "Manufacturer"
 F 6 "34LC02-I/P-ND" H 8200 5550 50  0001 C CNN "Digikey"
+F 7 "0" H 8200 5550 50  0001 C CNN "DNP"
 	1    8200 5550
 	1    0    0    -1  
 $EndComp
@@ -130,6 +132,7 @@ F 0 "JP1" V 9204 5941 50  0000 L CNN
 F 1 "Two-way Jumper" V 9295 5941 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9250 5875 50  0001 C CNN
 F 3 "~" H 9250 5875 50  0001 C CNN
+F 4 "1" H 9250 5875 50  0001 C CNN "DNP"
 	1    9250 5875
 	0    1    1    0   
 $EndComp
@@ -156,6 +159,7 @@ F 4 "10V" H 6000 6975 50  0001 C CNN "Voltage"
 F 5 "399-4151-ND" H 6000 6975 50  0001 C CNN "Digikey"
 F 6 "C315C104M5U5TA" H 6000 6975 50  0001 C CNN "MPN"
 F 7 "KEMET" H 6000 6975 50  0001 C CNN "Manufacturer"
+F 8 "0" H 6000 6975 50  0001 C CNN "DNP"
 	1    6000 6975
 	1    0    0    -1  
 $EndComp
@@ -233,6 +237,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 4725 3050 
 F 4 "MCP23S17-E/SP" H 4525 4150 50  0001 C CNN "MPN"
 F 5 "Microchip" H 4525 4150 50  0001 C CNN "Manufacturer"
 F 6 "MCP23S17-E/SP-ND" H 4525 4150 50  0001 C CNN "Digikey"
+F 7 "0" H 4525 4150 50  0001 C CNN "DNP"
 	1    4525 4150
 	-1   0    0    1   
 $EndComp
@@ -294,6 +299,7 @@ F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 1300 50  0001 C CNN
 F 4 "2460-L314ED-ND" H 2375 1300 50  0001 C CNN "Digikey"
 F 5 "L314ED" H 2375 1300 50  0001 C CNN "MPN"
 F 6 "American Opto Plus LED" H 2375 1300 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2375 1300 50  0001 C CNN "DNP"
 	1    2375 1300
 	1    0    0    -1  
 $EndComp
@@ -344,6 +350,7 @@ F 3 "~" H 2750 1300 50  0001 C CNN
 F 4 "CF14JT330RTR-ND" H 2750 1300 50  0001 C CNN "Digikey"
 F 5 "CF14JT330R" H 2750 1300 50  0001 C CNN "MPN"
 F 6 "Stackpole Electronics Inc" H 2750 1300 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2750 1300 50  0001 C CNN "DNP"
 	1    2750 1300
 	0    1    1    0   
 $EndComp
@@ -394,6 +401,7 @@ F 3 "~" H 2750 1600 50  0001 C CNN
 F 4 "CF14JT330RTR-ND" H 2750 1600 50  0001 C CNN "Digikey"
 F 5 "CF14JT330R" H 2750 1600 50  0001 C CNN "MPN"
 F 6 "Stackpole Electronics Inc" H 2750 1600 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2750 1600 50  0001 C CNN "DNP"
 	1    2750 1600
 	0    1    1    0   
 $EndComp
@@ -408,6 +416,7 @@ F 3 "~" H 2750 1900 50  0001 C CNN
 F 4 "CF14JT330RTR-ND" H 2750 1900 50  0001 C CNN "Digikey"
 F 5 "CF14JT330R" H 2750 1900 50  0001 C CNN "MPN"
 F 6 "Stackpole Electronics Inc" H 2750 1900 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2750 1900 50  0001 C CNN "DNP"
 	1    2750 1900
 	0    1    1    0   
 $EndComp
@@ -422,6 +431,7 @@ F 3 "~" H 2750 2200 50  0001 C CNN
 F 4 "CF14JT330RTR-ND" H 2750 2200 50  0001 C CNN "Digikey"
 F 5 "CF14JT330R" H 2750 2200 50  0001 C CNN "MPN"
 F 6 "Stackpole Electronics Inc" H 2750 2200 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2750 2200 50  0001 C CNN "DNP"
 	1    2750 2200
 	0    1    1    0   
 $EndComp
@@ -436,6 +446,7 @@ F 3 "~" H 2750 2500 50  0001 C CNN
 F 4 "CF14JT330RTR-ND" H 2750 2500 50  0001 C CNN "Digikey"
 F 5 "CF14JT330R" H 2750 2500 50  0001 C CNN "MPN"
 F 6 "Stackpole Electronics Inc" H 2750 2500 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2750 2500 50  0001 C CNN "DNP"
 	1    2750 2500
 	0    1    1    0   
 $EndComp
@@ -450,6 +461,7 @@ F 3 "~" H 2750 2800 50  0001 C CNN
 F 4 "CF14JT330RTR-ND" H 2750 2800 50  0001 C CNN "Digikey"
 F 5 "CF14JT330R" H 2750 2800 50  0001 C CNN "MPN"
 F 6 "Stackpole Electronics Inc" H 2750 2800 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2750 2800 50  0001 C CNN "DNP"
 	1    2750 2800
 	0    1    1    0   
 $EndComp
@@ -464,6 +476,7 @@ F 3 "~" H 2750 3100 50  0001 C CNN
 F 4 "CF14JT330RTR-ND" H 2750 3100 50  0001 C CNN "Digikey"
 F 5 "CF14JT330R" H 2750 3100 50  0001 C CNN "MPN"
 F 6 "Stackpole Electronics Inc" H 2750 3100 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2750 3100 50  0001 C CNN "DNP"
 	1    2750 3100
 	0    1    1    0   
 $EndComp
@@ -478,6 +491,7 @@ F 3 "~" H 2750 3400 50  0001 C CNN
 F 4 "CF14JT330RTR-ND" H 2750 3400 50  0001 C CNN "Digikey"
 F 5 "CF14JT330R" H 2750 3400 50  0001 C CNN "MPN"
 F 6 "Stackpole Electronics Inc" H 2750 3400 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2750 3400 50  0001 C CNN "DNP"
 	1    2750 3400
 	0    1    1    0   
 $EndComp
@@ -492,6 +506,7 @@ F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 1600 50  0001 C CNN
 F 4 "2460-L314ED-ND" H 2375 1600 50  0001 C CNN "Digikey"
 F 5 "L314ED" H 2375 1600 50  0001 C CNN "MPN"
 F 6 "American Opto Plus LED" H 2375 1600 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2375 1600 50  0001 C CNN "DNP"
 	1    2375 1600
 	1    0    0    -1  
 $EndComp
@@ -506,6 +521,7 @@ F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 1900 50  0001 C CNN
 F 4 "2460-L314ED-ND" H 2375 1900 50  0001 C CNN "Digikey"
 F 5 "L314ED" H 2375 1900 50  0001 C CNN "MPN"
 F 6 "American Opto Plus LED" H 2375 1900 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2375 1900 50  0001 C CNN "DNP"
 	1    2375 1900
 	1    0    0    -1  
 $EndComp
@@ -520,6 +536,7 @@ F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 2200 50  0001 C CNN
 F 4 "2460-L314ED-ND" H 2375 2200 50  0001 C CNN "Digikey"
 F 5 "L314ED" H 2375 2200 50  0001 C CNN "MPN"
 F 6 "American Opto Plus LED" H 2375 2200 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2375 2200 50  0001 C CNN "DNP"
 	1    2375 2200
 	1    0    0    -1  
 $EndComp
@@ -534,6 +551,7 @@ F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 2500 50  0001 C CNN
 F 4 "2460-L314ED-ND" H 2375 2500 50  0001 C CNN "Digikey"
 F 5 "L314ED" H 2375 2500 50  0001 C CNN "MPN"
 F 6 "American Opto Plus LED" H 2375 2500 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2375 2500 50  0001 C CNN "DNP"
 	1    2375 2500
 	1    0    0    -1  
 $EndComp
@@ -548,6 +566,7 @@ F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 2800 50  0001 C CNN
 F 4 "2460-L314ED-ND" H 2375 2800 50  0001 C CNN "Digikey"
 F 5 "L314ED" H 2375 2800 50  0001 C CNN "MPN"
 F 6 "American Opto Plus LED" H 2375 2800 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2375 2800 50  0001 C CNN "DNP"
 	1    2375 2800
 	1    0    0    -1  
 $EndComp
@@ -562,6 +581,7 @@ F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 3100 50  0001 C CNN
 F 4 "2460-L314ED-ND" H 2375 3100 50  0001 C CNN "Digikey"
 F 5 "L314ED" H 2375 3100 50  0001 C CNN "MPN"
 F 6 "American Opto Plus LED" H 2375 3100 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2375 3100 50  0001 C CNN "DNP"
 	1    2375 3100
 	1    0    0    -1  
 $EndComp
@@ -576,6 +596,7 @@ F 3 "https://www.aopled.com/AOP_PDFs/L314ED.pdf" H 2375 3400 50  0001 C CNN
 F 4 "2460-L314ED-ND" H 2375 3400 50  0001 C CNN "Digikey"
 F 5 "L314ED" H 2375 3400 50  0001 C CNN "MPN"
 F 6 "American Opto Plus LED" H 2375 3400 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2375 3400 50  0001 C CNN "DNP"
 	1    2375 3400
 	1    0    0    -1  
 $EndComp
@@ -633,6 +654,7 @@ F 4 "10V" H 6500 6975 50  0001 C CNN "Voltage"
 F 5 "399-4151-ND" H 6500 6975 50  0001 C CNN "Digikey"
 F 6 "C315C104M5U5TA" H 6500 6975 50  0001 C CNN "MPN"
 F 7 "KEMET" H 6500 6975 50  0001 C CNN "Manufacturer"
+F 8 "0" H 6500 6975 50  0001 C CNN "DNP"
 	1    6500 6975
 	1    0    0    -1  
 $EndComp
@@ -674,6 +696,7 @@ F 4 "16V" H 5500 6975 50  0001 C CNN "Voltage"
 F 5 "399-4151-ND" H 5500 6975 50  0001 C CNN "Digikey"
 F 6 "C315C104M5U5TA" H 5500 6975 50  0001 C CNN "MPN"
 F 7 "KEMET" H 5500 6975 50  0001 C CNN "Manufacturer"
+F 8 "0" H 5500 6975 50  0001 C CNN "DNP"
 	1    5500 6975
 	1    0    0    -1  
 $EndComp
@@ -714,6 +737,7 @@ F 3 "https://www.cuidevices.com/product/resource/digikeypdf/ds01-254.pdf" H 2500
 F 4 "2223-DS01C-254-L-08BE-ND" H 2500 4650 50  0001 C CNN "Digikey"
 F 5 "DS01C-254-L-08BE" H 2500 4650 50  0001 C CNN "MPN"
 F 6 "CUI Devices" H 2500 4650 50  0001 C CNN "Manufacturer"
+F 7 "0" H 2500 4650 50  0001 C CNN "DNP"
 	1    2500 4650
 	1    0    0    -1  
 $EndComp
@@ -807,6 +831,7 @@ F 3 "~" H 9250 5400 50  0001 C CNN
 F 4 "CF14JT10K0TR-ND" H 9250 5400 50  0001 C CNN "Digikey"
 F 5 "CF14JT10K0" H 9250 5400 50  0001 C CNN "MPN"
 F 6 "Stackpole Electronics Inc" H 9250 5400 50  0001 C CNN "Manufacturer"
+F 7 "0" H 9250 5400 50  0001 C CNN "DNP"
 	1    9250 5400
 	-1   0    0    1   
 $EndComp
@@ -843,12 +868,13 @@ L Device:R_Network08 RN1
 U 1 1 61246621
 P 3225 5325
 F 0 "RN1" H 3050 5600 50  0000 L CNN
-F 1 "10k x 8" H 3050 5525 50  0000 L CNN
+F 1 "10k" H 3050 5525 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP9" V 3700 5325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 3225 5325 50  0001 C CNN
 F 4 "Bourns Inc." H 3225 5325 50  0001 C CNN "Manufacturer"
 F 5 "4609X-101-103LF" H 3225 5325 50  0001 C CNN "MPN"
 F 6 "4609X-101-103LF-ND" H 3225 5325 50  0001 C CNN "Digikey"
+F 7 "0" H 3225 5325 50  0001 C CNN "DNP"
 	1    3225 5325
 	-1   0    0    1   
 $EndComp
