@@ -1,0 +1,3 @@
+[submodule "Kicad/Neotron-Common-Hardware"]
+	path = Kicad/Neotron-Common-Hardware
+	url = https://github.com/Neotron-Compute/Neotron-Common-Hardware
