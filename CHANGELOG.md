@@ -2,6 +2,10 @@
 
 ## Unreleased Changes
 
+* None
+
+## v0.6.1
+
 * Allow KiBot to set version/date field.
 
 ## v0.6.0
