@@ -12,7 +12,7 @@ To use this template, simply copy the files in this repository and edit away! Yo
 
 ## Licence
 
-This schematic and PCB design is Copyright (c) 2021 The Neotron Developers, et al.
+This schematic and PCB design is Copyright (c) 2022 The Neotron Developers, et al.
 
 [![CC BY 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 

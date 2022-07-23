@@ -6,8 +6,8 @@
 
   (title_block
     (title "Neotron Expansion Template")
-    (date "2021-08-18")
-    (rev "[Uncontrolled]")
+    (date "${date}")
+    (rev "${version}")
     (company "https://neotron-compute.github.io/")
     (comment 1 "Licensed as CC BY 4.0")
     (comment 2 "Copyright (c) 2021, The Neotron Developers, et al.")

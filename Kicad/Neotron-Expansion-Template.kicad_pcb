@@ -7,11 +7,11 @@
   (paper "A4")
   (title_block
     (title "Neotron Expansion Template")
-    (date "2021-08-18")
-    (rev "[Uncontrolled]")
+    (date "${date}")
+    (rev "${version}")
     (company "https://neotron-compute.github.io/")
     (comment 1 "Licenced as CC BY 4.0")
-    (comment 2 "Copyright (c) 2021 The Neotron Developers, et al")
+    (comment 2 "Copyright (c) 2022 The Neotron Developers")
   )
 
   (layers
@@ -1548,7 +1548,7 @@
   (gr_text "Components face away\nfrom ATX I/O area" (at 139.7 111.76) (layer "F.SilkS") (tstamp 3a1cec66-2923-4c02-b098-76fd5216b7a5)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Neotron Expansion\nTemplate [Uncontrolled]" (at 139.065 102.235) (layer "F.SilkS") (tstamp d4344f55-c2ed-413e-96f7-245d477a375c)
+  (gr_text "Neotron Expansion\nTemplate ${version}" (at 139.065 102.235) (layer "F.SilkS") (tstamp d4344f55-c2ed-413e-96f7-245d477a375c)
     (effects (font (size 1 1) (thickness 0.15) italic))
   )
   (gr_text "Prog.\nEna." (at 141.605 133.985) (layer "F.SilkS") (tstamp d69b9835-51aa-4ae0-84a5-602c7c97261f)
