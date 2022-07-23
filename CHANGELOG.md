@@ -2,6 +2,8 @@
 
 ## Unreleased Changes
 
+* Allow KiBot to set version/date field.
+
 ## v0.6.0
 
 * Fixed power supply to MCP23S17
