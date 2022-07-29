@@ -4,6 +4,12 @@
 
 * None
 
+## v0.7.0
+
+* Make board larger.
+* Add screwholes.
+* Adjust to fit new expansion connector position on Neotron Pico 1.0.
+
 ## v0.6.1
 
 * Allow KiBot to set version/date field.
